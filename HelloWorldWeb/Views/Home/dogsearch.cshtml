@@ -1,0 +1,52 @@
+﻿@model HelloWorldWeb.CoreObject.Dog
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/style.css">
+    <title>dogsearch</title>
+</head>
+<body>
+  
+    <div class="img">
+
+        <img src= @Model.photo alt="No image" width="300" height="200" />
+
+
+    </div>
+
+
+    <div class="img1">
+        <h1 class="center">
+
+            @Model.name
+            
+        </h1>
+        <h1 class="center">
+
+            Breed: @Model.breed
+            
+
+        </h1>
+
+
+        <p> @Model.desc</p>
+
+        <p class="thick">Click Here for Shelter Information  </p>
+          
+
+        <a href="/Shelter/ShelterInfo?shelterid=@Model.shelterID">  @Model.shelterID     </a>
+
+        <form id="form-id" action="favourite" method="get">
+            <div>
+                <input type="radio" name="actiontype" value="add" onclick="document.getElementById('form-id').submit()">Make it favorite
+               
+            </div>  
+</body>
+</html>

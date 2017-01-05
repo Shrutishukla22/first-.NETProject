@@ -1,0 +1,45 @@
+﻿@model HelloWorldWeb.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>login details </title>
+</head>
+<body>
+    <div> 
+        <table>
+            <tr>
+                <td>
+                    <b> UserID</b>
+                </td>
+                <td>
+                    <b> @Model.userid</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> First Name</b>
+                </td>
+                <td>
+                    <b> @Model.firstname</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Last Name</b>
+                </td>
+                <td>
+                    <b> @Model.lastname</b>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

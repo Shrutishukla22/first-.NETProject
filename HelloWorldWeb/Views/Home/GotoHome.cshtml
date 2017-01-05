@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/style.css">
+    <title>LogIn</title>
+</head>
+<body>
+    <section class="loginform cf">
+    <form action="login" method="post">
+        <h1 class="loginhere">Login here!</h1>
+        <h2 style="color:red;">
+
+            <b> @ViewData["message"] </b>
+            
+        </h2>
+                <ul>
+                    <li>
+                        <label for="userid">UserID</label>
+                        <input type="text" name="userid" required>
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="password" required>
+                    </li>
+                    <li>
+                        <input type="submit" value="login">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="link">Not a Member</label>
+                        <a href="register.html"> Sign Up</a>
+                    </li>
+                </ul>
+    </form>
+    </section>
+
+</body>
+</html>

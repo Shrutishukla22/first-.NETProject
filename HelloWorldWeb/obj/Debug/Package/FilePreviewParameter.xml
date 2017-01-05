@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="DetroitDogs" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Shruti\\Documents\\Visual\ Studio\ 2015\\Projects\\HelloWorldWeb\\HelloWorldWeb\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Shruti\\Documents\\Visual\ Studio\ 2015\\Projects\\HelloWorldWeb\\HelloWorldWeb\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="DefaultConnection_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Shruti\\Documents\\Visual\ Studio\ 2015\\Projects\\HelloWorldWeb\\HelloWorldWeb\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="HelloWorldWeb.Models.UserContext-Web.config Connection String" description="" value="HelloWorldWeb.Models.UserContext_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Shruti\\Documents\\Visual\ Studio\ 2015\\Projects\\HelloWorldWeb\\HelloWorldWeb\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HelloWorldWeb.Models.UserContext']/@connectionString" />
+  </parameter>
+  <parameter name="MysqlConnection-Web.config Connection String" description="" value="server=detroitdogsdbinstance.ce7pgizq4pbf.us-east-2.rds.amazonaws.com:3306;uid=shrutishukla22;pwd=india1947;database=dogswithcuddle;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Shruti\\Documents\\Visual\ Studio\ 2015\\Projects\\HelloWorldWeb\\HelloWorldWeb\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MysqlConnection']/@connectionString" />
+  </parameter>
+  <parameter name="UserContext-Web.config Connection String" description="UserContext Connection String used in web.config by the application to access the database." value="server=localhost:3306; database=movies; integrated security=SSPI" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Shruti\\Documents\\Visual\ Studio\ 2015\\Projects\\HelloWorldWeb\\HelloWorldWeb\\obj\\Debug\\Package\\PackageTmp\\Views\\Web\.config$" match="/configuration/connectionStrings/add[@name='UserContext']/@connectionString" />
+  </parameter>
+</parameters>
